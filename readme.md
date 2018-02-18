@@ -8,53 +8,51 @@ lucianobuhler@gmail.com
 
 ## Description
 
-This project was developed in NODE.JS using the EXPRESS framework, ANGULAR.JS using
-Google's Natural Language API​ to analizing sentiments in a informed sentence.
+This project was developed in NODE.JS, EXPRESS framework, ANGULAR.JS using
+Google's Natural Language API to analizing sentiments in a informed sentence.
 
 ## Configuration
 This application was developed in Ubuntu 16.04.
-The configuration below is for this.
+The configuration below is for Linux Ubuntu.
 
- #Step-by-Step#
+  # Step-by-Step
 
 // In Terminal
-// Update your package repository list
+// Update your list in a package repository
 $ sudo apt-get update
 
 // Install NODEJS
 $ sudo apt-get install nodejs
 
-// Install NPM, the package manager of NODEJS.
+// Install NPM, the NODEJS package manager.
 $ sudo apt-get install npm
 
-// install EXPRESS framework in global and one generator to create structures and files
-// of project
+// Install EXPRESS framework in global and one generator to create project structure and files.
 $ npm install -g express express-generator@4
 
-// this command create the project with your structure and files. In place of <projectName>,
-//enter with a name to them
+// This command create this project structure and files with name <projectName>. You need to change the name. This command create the package.json file with the project pendences in the project folder.
 $ express <projectName> -e ejs
 
-// to install the EJS library
+// To install the EJS library.
 $ npm install EJS
 
-// the last command created the package.json file with the pendences of the project.
-//In folder created 'ProjectName' type
+// Write in Terminal, in created folder 'ProjectName' to install pendences of package.JSON
 $ npm install
 
-// and to run the server
-$ npm start
-
-// To install the Google library to connect with Cloud like a service in the current folder
+// To install the Google library to connect with Google's Natural Language API in the current folder, write:
 $ npm install @google-cloud/language --save
 
-// And set the variable GOOGLE_APPLICATION_CREDENTIALS with the absolut path of credentials
-// JSON file generated in https://console.cloud.google.com/apis/credentials
+// And set the variable GOOGLE_APPLICATION_CREDENTIALS with the absolut path of credentials JSON file generated in https://console.cloud.google.com/apis/credentials
 $ export GOOGLE_APPLICATION_CREDENTIALS="<directory path>/Navomi_Task3-c2b8183b19e9.json"
+
+// Start the server.
+$ npm start
+
+
 
 
 ## Files
-// all the structure of this project was generated in EXPRESS framework in this way.
+// All the structure of this project was generated in EXPRESS framework.
 create : express_example
 create : express_example/package.json
 create : express_example/app.js
@@ -74,26 +72,18 @@ create : express_example/public/stylesheets
 create : express_example/public/stylesheets/style.styl
 
 
-//The following files must be replaced/copied:
+// The following files must be replaced/copied:
 
-// this JSON file was generated in Google Cloud. It have the credentials to access
-// the Google Cloud to use Google Natural Language API.
-<directory path>/Navomi Task3-c2b8183b19e9.json
-
-// The file app.js, the main configuration file for your Express app
-<directory path>/app.js
-
-// index.js it's the backend. It connect with Google Natural Language API
-<directory path>/routes/index.js
-
-// index.ejs is a layout template file. It contain the HTML structure, calls to
-// NODEJS script and Angular functions
-<directory path>/views/index.ejs
+<directory path>/Navomi_Task3-c2b8183b19e9.json  // this JSON file is the API key generated in Google Cloud Platform to use                                                    // Google Natural Language API.
+<directory path>/routes/index.js                 // This file receive the sentence of form and send to Google Natural
+                                                 // Language API to sentiment analysis, test your response and return 
+                                                 // the content to output.
+<directory path>/views/index.ejs                 // index.ejs is a layout template file and contain the HTML structure.
 
 
 ## TO RUNNING
 
-// In Terminal, in the folder of installation, runs the next command to start the NODEJS server
+// In Terminal, in the installation folder, start the NODEJS server
 $ npm start
 
 // In Browser, access the following address:

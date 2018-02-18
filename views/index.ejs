@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="google-signin-client_id" content="329736622592-ltsp35c5a5ps1iblr84rd2rvkblv5fd6.apps.googleusercontent.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta name="description" content="">
+	<meta name="author" content="Luciano">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+  <div>
+    <!-- This is the button to connect with Google Account -->
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <!-- This button call the function to logout of the Google Account -->
+    <div><a href="#" onclick="signOut();">Sign out</a></div>
+
+    <!-- This is the button to open the Google+ page -->
+    <br>
+    <div><g:plusone size="tall"></g:plusone></div>
+
+    <h1 align="center"><%= title %></h1>
+    <p align="center">Welcome to <%= title %></p>
+    </p>
+  </div>
+
+  <!-- Here the form with the sentence <fSentence> it's sent -->
+  <div>
+    <form action="/formSentence" method="POST" align="center">
+      <div class="form-group">
+        <textarea rows="1" cols="80" type="text" name="fSentence" class="form-control" placeholder="Write here your sentence"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Send" class="btn-shorten">
+      </div>
+    </form>
+  </div>
+
+  <!-- This div shows the result of the sentiment analysis of the typed sentence -->
+  <div class="box1">
+    <div style="width:400px;background:LightSkyBlue" align="center" border-bottom="4px dotted blue" >
+      <%= _resLabel %>
+    </div>
+  </div>
+
+  <div>
+    <footer>
+	  <p align="center">
+	    &copy; Copyright  by Luciano
+	  </p>
+    </footer>
+  </div>
+
+  <script>
+    <!-- LogOut of Google -->
+    function signOut() {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+        console.log('User signed out.');
+      });
+    }
+
+    <!-- include the Google Platform Library to integrate Google Sign-In -->
+    window.___gcfg = {
+      lang: 'en-US',
+      parsetags: 'onload'
+    };
+  </script>
+</body>
+
+</html>

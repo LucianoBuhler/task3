@@ -73,11 +73,11 @@ create : express_example/public/stylesheets/style.styl
   
 ### The following files must be replaced/copied:  
 
-<b><directory path>/Navomi_Task3-c2b8183b19e9.json</b>  // this JSON file is the API key generated in Google Cloud Platform to use                                                      // Google Natural Language API.    
-<b><directory path>/routes/index.js</b>                 // This file receive the sentence of form and send to Google Natural  
+<b>__directory path__/Navomi_Task3-c2b8183b19e9.json</b>  // this JSON file is the API key generated in Google Cloud Platform to use                                                      // Google Natural Language API.    
+<b>__directory path__/routes/index.js</b>                 // This file receive the sentence of form and send to Google Natural  
                                                  // Language API to sentiment analysis, test your response and return   
                                                  // the content to output.  
-<b><directory path>/views/index.ejs</b>                 // index.ejs is a layout template file and contain the HTML structure.  
+<b>__directory path__>/views/index.ejs</b>                 // index.ejs is a layout template file and contain the HTML structure.  
   
   
 ## TO RUNNING  

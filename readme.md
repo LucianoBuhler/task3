@@ -27,7 +27,7 @@ This project has been deployed in Ubuntu 16.04, and the configuration below appl
 <b>$ sudo apt-get install npm</b>  
   
 // Install EXPRESS framework in global and one generator to create project structure and files.  
-<b> npm install -g express express-generator@4</b>  
+<b>$ npm install -g express express-generator@4</b>  
     
 // This command create this project structure and files with name <projectName>. You need to change the name. This command create the package.json file with the project pendences in the project folder.  
 <b>$ express <projectName> -e ejs</b>  
@@ -70,7 +70,7 @@ create : express_example/public/stylesheets
 create : express_example/public/stylesheets/style.styl  
   
   
-// The following files must be replaced/copied:  
+### The following files must be replaced/copied:  
 
 <b><directory path>/Navomi_Task3-c2b8183b19e9.json  // this JSON file is the API key generated in Google Cloud Platform to use                                                      // Google Natural Language API.</b>    
 <b><directory path>/routes/index.js                 // This file receive the sentence of form and send to Google Natural  

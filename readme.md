@@ -80,7 +80,7 @@ index.ejs is a layout template file and contain the HTML structure.
 <b>* __directory path__>/views/index.ejs</b>  
   
   
-## TO RUNNING  
+## RUNNING  
   
 In Terminal, in the installation folder, start the NODEJS server  
 <b>$ npm start</b>  

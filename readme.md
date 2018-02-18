@@ -30,7 +30,7 @@ Install NPM, the NODEJS package manager.
 Install EXPRESS framework in global mode, and the generator to create project structure and files.  
 <b>$ npm install -g express express-generator@4</b>  
     
-This command create this project structure and files with name <projectName>. You need to change the name. This command create the package.json file with the project pendences in the project folder.  
+Create the project structure and files with name <projectName> and generate the package.JSON file with the project pendences.  
 <b>$ express <projectName> -e ejs</b>  
   
 Install the EJS library.  
@@ -39,7 +39,7 @@ Install the EJS library.
 Within the project folder (that was created by EXPRESS), type the following commands to install pendencies of package.JSON  
 <b>$ npm install</b>  
   
-Alson in the project folder, install the Google library to connect with Google's Natural Language API.  
+Also in the project folder, install the Google library to connect with Google's Natural Language API.  
 <b>$ npm install @google-cloud/language --save</b>  
   
 And set the variable GOOGLE_APPLICATION_CREDENTIALS with the absolut path of credentials JSON file generated in https://console.cloud.google.com/apis/credentials  

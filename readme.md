@@ -30,8 +30,8 @@ Install NPM, the NODEJS package manager.
 Install EXPRESS framework in global mode, and the generator to create project structure and files.  
 <b>$ npm install -g express express-generator@4</b>  
     
-Create the project structure and files with name <projectName> and generate the package.JSON file with the project pendences.  
-<b>$ express <projectName> -e ejs</b>  
+Create the project structure and files with name \<projectName\> and generate the package.JSON file with the project pendences.  
+<b>$ express \<projectName\> -e ejs</b>  
   
 Install the EJS library.  
 <b>$ npm install EJS</b>  

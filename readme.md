@@ -18,7 +18,7 @@ This project has been deployed in Ubuntu 16.04, and the configuration below appl
   
 #### In Terminal  
 
-Update your list in a package repository  
+Update your apt-get repository  
 <b>$ sudo apt-get update</b>  
   
 Install NODEJS  
@@ -27,19 +27,19 @@ Install NODEJS
 Install NPM, the NODEJS package manager.  
 <b>$ sudo apt-get install npm</b>  
   
-Install EXPRESS framework in global and one generator to create project structure and files.  
+Install EXPRESS framework in global mode, and the generator to create project structure and files.  
 <b>$ npm install -g express express-generator@4</b>  
     
 This command create this project structure and files with name <projectName>. You need to change the name. This command create the package.json file with the project pendences in the project folder.  
 <b>$ express <projectName> -e ejs</b>  
   
-To install the EJS library.  
+Install the EJS library.  
 <b>$ npm install EJS</b>  
   
-Write in Terminal, in created folder 'ProjectName' to install pendences of package.JSON  
+Within the project folder (that was created by EXPRESS), type the following commands to install pendencies of package.JSON  
 <b>$ npm install</b>  
   
-To install the Google library to connect with Google's Natural Language API in the current folder, write:  
+Alson in the project folder, install the Google library to connect with Google's Natural Language API.  
 <b>$ npm install @google-cloud/language --save</b>  
   
 And set the variable GOOGLE_APPLICATION_CREDENTIALS with the absolut path of credentials JSON file generated in https://console.cloud.google.com/apis/credentials  
